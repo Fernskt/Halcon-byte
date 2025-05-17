@@ -30,7 +30,7 @@ export default function Differentials() {
   return (
     <section  id="differentials" className={styles.differentials}>
       <h2 className={styles.title}>¿Qué nos hace diferentes?</h2>
-      <div ref={revealRef} className={styles.list}>
+      <div  className={styles.list}>
         {DIFFERENTIALS.map(({ title, description }) => (
           <div className={styles.item} key={title}>
             <h3 className={styles.itemTitle}>{title}</h3>

@@ -38,6 +38,7 @@ export default function NavBar() {
 
       <ul className={`${styles.links} ${open ? styles.open : ''}`}>
         <li onClick={() => scrollTo('about')}>Nosotros</li>
+        <li onClick={() => scrollTo('differentials')}>Diferenciales</li>
         <li onClick={() => scrollTo('services')}>Servicios</li>
         <li onClick={() => scrollTo('contact')}>Contacto</li>
       </ul>

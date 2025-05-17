@@ -9,7 +9,7 @@
   text-align: center;
   font-size: clamp(1.75rem, 2.5vw, 2.25rem);
   margin-bottom: 3rem;
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
 }
 
 .grid {
@@ -53,6 +53,7 @@
   margin-bottom: 1.5rem;
   border-radius: var(--radius-lg);
   background: var(--color-primary-light);
+  color: #2563eb;
 }
 
 @media (max-width: 768px) {

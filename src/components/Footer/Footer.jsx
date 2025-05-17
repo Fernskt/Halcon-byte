@@ -1,10 +1,11 @@
 import styles from './Footer.module.css';
+import halcon from '../../assets/images/halcon5.png';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p className={styles.brand}>HalconByte</p>
+        <p className={styles.brand}> <img src={halcon} alt="HalconByte" className={styles.logo}/> HalconByte</p>
         <ul className={styles.links}>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#differentials">Diferenciales</a></li>
