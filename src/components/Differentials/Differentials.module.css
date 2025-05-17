@@ -1,0 +1,43 @@
+@import '../../styles/variables.css';
+
+.differentials {
+  padding: 4rem 1.5rem;
+  background: url('../../assets/images/HalconBackground.png') center/cover no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  margin-bottom: 2.5rem;
+}
+
+.list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  backdrop-filter: blur(4px);
+  transition: transform 0.25s ease-in-out;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+}
+
+.itemTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  color: var(--color-accent);
+}
+
+.itemDesc {
+  margin: 0;
+  line-height: 1.5;
+}

@@ -1,0 +1,52 @@
+@import '../../styles/variables.css';
+
+.about {
+  padding: 4rem 1.5rem;
+  background: #fff;
+  text-align: center;
+  padding: 5rem 15rem;
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  margin-bottom: 1.75rem;
+  color: var(--color-primary-dark);
+}
+
+.subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--color-primary);
+}
+
+.paragraph {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+  color: #374151; /* slate-700 */
+}
+
+.cta {
+  margin-top: 1.25rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.cta a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+  }
+}

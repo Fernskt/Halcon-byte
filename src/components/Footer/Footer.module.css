@@ -1,0 +1,75 @@
+@import '../../styles/variables.css';
+
+.footer {
+  background: var(--color-primary-dark); 
+  color: #fff;
+  padding: 2.5rem 1.5rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: var(--color-accent);
+}
+
+.copy {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+@media (max-width: 640px) {
+  .copy {
+    margin-top: 0.5rem;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .links a {
+    margin: 0.5rem 0;
+  }
+  .brand {
+    margin: 1rem;
+  }
+  .container {
+    gap: 0.5rem;
+  }
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+  .footer .copy {
+    margin: 2rem;
+  }
+}
