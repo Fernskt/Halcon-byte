@@ -28,9 +28,9 @@ export default function Differentials() {
   const revealRef = useScrollReveal('scaleIn');
 
   return (
-    <section ref={revealRef} id="differentials" className={styles.differentials}>
+    <section  id="differentials" className={styles.differentials}>
       <h2 className={styles.title}>¿Qué nos hace diferentes?</h2>
-      <div className={styles.list}>
+      <div ref={revealRef} className={styles.list}>
         {DIFFERENTIALS.map(({ title, description }) => (
           <div className={styles.item} key={title}>
             <h3 className={styles.itemTitle}>{title}</h3>
