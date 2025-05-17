@@ -19,6 +19,10 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   background: #fff;
   border-radius: var(--radius-lg);
@@ -40,12 +44,21 @@
 .cardDesc {
   margin: 0;
   line-height: 1.5;
-  color: #4b5563;
+  /* color: #4b5563; */
+}
+
+.cardIcon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-primary-light);
 }
 
 @media (max-width: 768px) {
   .services {
     padding: 2rem 1rem;
+    text-align: center;
   }
 
   .title {

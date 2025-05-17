@@ -12,6 +12,12 @@
   background: #fff;
   box-shadow: 0 2px 6px 5px rgba(0, 0, 0, 0.09);
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 2.5rem;
+}
 .title span {
   color: var(--color-accent);
   font-size: 1.5rem;
@@ -24,6 +30,8 @@
 }
 
 .brand {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 1.125rem;
   cursor: pointer;

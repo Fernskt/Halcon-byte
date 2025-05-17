@@ -1,11 +1,10 @@
 @import "variables.css";
 @import "animations.css";
-@import "modern-normalize"; 
+@import "modern-normalize";
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: var(--color-bg-light);
   color: var(--color-bg-dark);
-  font-size: 1.25rem;
 }

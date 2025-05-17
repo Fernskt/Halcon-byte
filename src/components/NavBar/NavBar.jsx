@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import styles from './NavBar.module.css';
+import halcon from '../../assets/images/halcon5.png';
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
 
-  // Cierra el menú al hacer scroll
   useEffect(() => {
     const close = () => setOpen(false);
     window.addEventListener('scroll', close);
@@ -22,7 +22,7 @@ export default function NavBar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.brand} onClick={() => scrollTo('hero')}>
-        {/* Reemplaza con tu logo o texto */}
+        <img src={halcon} alt="HalconByte" className={styles.logo} />
         <h2 className={styles.title}>Halcon<span>Byte</span></h2>
       </div>
 
@@ -37,8 +37,8 @@ export default function NavBar() {
       </button>
 
       <ul className={`${styles.links} ${open ? styles.open : ''}`}>
+        <li onClick={() => scrollTo('about')}>Nosotros</li>
         <li onClick={() => scrollTo('services')}>Servicios</li>
-        <li onClick={() => scrollTo('differentials')}>Diferenciales</li>
         <li onClick={() => scrollTo('contact')}>Contacto</li>
       </ul>
     </nav>

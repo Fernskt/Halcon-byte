@@ -13,7 +13,7 @@ export default function Footer() {
         </ul>
       </div>
       <p className={styles.copy}>
-        © {new Date().getFullYear()} [Estudio]. Todos los derechos reservados.
+        © {new Date().getFullYear()} HalconByte. Todos los derechos reservados.
       </p>
     </footer>
   );
