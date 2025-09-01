@@ -22,8 +22,8 @@ export default function NavBar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.brand} onClick={() => scrollTo('hero')}>
-        <img src={halcon} alt="HalconByte" className={styles.logo} />
-        <h2 className={styles.title}>Halcon<span>Byte</span></h2>
+        <img src={halcon} alt="HawkByte" className={styles.logo} />
+        <h2 className={styles.title}>Hawk<span>Byte!</span></h2>
       </div>
 
       <button

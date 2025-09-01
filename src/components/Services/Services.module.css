@@ -1,13 +1,16 @@
 @import '../../styles/variables.css';
 
 .services {
+  width: 100%;
+  min-height: 100vh;
   padding: 4rem 10rem;
-  background: var(--color-bg-light);
+  font-size: 1.2rem;
+
 }
 
 .title {
   text-align: center;
-  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  font-size: clamp(2.75rem, 4.5vw, 4.25rem);
   margin-bottom: 3rem;
   color: var(--color-primary);
 }
@@ -15,7 +18,7 @@
 .grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .card {
@@ -24,10 +27,11 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: #fff;
+  background: #ffffff88;
   border-radius: var(--radius-lg);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.071);
 }
 
 .card:hover {
@@ -37,7 +41,6 @@
 
 .cardTitle {
   margin: 0 0 0.75rem;
-  font-size: 1.125rem;
   color: var(--color-primary);
 }
 
@@ -53,18 +56,12 @@
   margin-bottom: 1.5rem;
   border-radius: var(--radius-lg);
   background: var(--color-primary-light);
-  color: #2563eb;
 }
 
 @media (max-width: 768px) {
   .services {
     padding: 2rem 1rem;
     text-align: center;
-  }
-
-  .title {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
   }
 
   .grid {
@@ -75,7 +72,4 @@
     padding: 1.5rem;
   }
 
-  .cardTitle {
-    font-size: 1rem;
-  }
 }

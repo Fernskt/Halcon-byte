@@ -1,16 +1,30 @@
 @import '../../styles/variables.css';
 
 .differentials {
-  padding: 4rem 1.5rem;
-  background: url('../../assets/images/HalconBackground.png') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../../assets/images/HalconBackground.png') center/cover no-repeat;
   background-attachment: fixed;
   color: #fff;
+  font-size: 1.2rem;
+  scroll-margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .differentials {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  
 }
 
 .title {
   text-align: center;
-  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
-  margin-bottom: 2.5rem;
+  font-size: clamp(2.75rem, 4.5vw, 4.25rem);
+  margin-bottom: 3rem;
 }
 
 .list {

@@ -1,8 +1,9 @@
 :root {
-  --color-primary: #2563eb;
+  --color-primary: #1e44c0;
   --color-primary-dark: #1e40af;
   --color-secondary: #4338ca;
-  --color-accent: #fe8a24;
+  /*--color-accent: #fe8a24;*/
+  --color-accent: #10c343;
   --color-bg-light: #f9fafb;
   --color-bg-dark: #525864;
   --radius-lg: 1rem;

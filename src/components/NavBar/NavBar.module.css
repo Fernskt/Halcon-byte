@@ -50,12 +50,14 @@
   color: var(--color-secondary);
   cursor: pointer;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: all 0.2s;
+  font-weight: 600;
 }
 
 .links li:hover {
   color: var(--color-accent);
-}
+  scale: 1.1;
+ }
 
 /* Burger (mobile) */
 .burger {

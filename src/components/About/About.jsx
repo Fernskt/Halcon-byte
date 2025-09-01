@@ -1,16 +1,25 @@
 import styles from './About.module.css';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
+import Squares from './Squares';
+import DecryptedText from '../Hero/DecryptedText';
 
 export default function About() {
   const revealRef = useScrollReveal();
 
   return (
     <section ref={revealRef} id="about" className={styles.about}>
+      <Squares
+        speed={0.5}
+        squareSize={40}
+        direction='diagonal'
+        borderColor='#edededff'
+        hoverFillColor='#edededff'
+      />
       <h2 className={styles.title}>Sobre Nosotros</h2>
-
+    
       <p className={styles.paragraph}>
         En un mundo donde la tecnología avanza a pasos agigantados, contar con un equipo confiable,
-        ágil y con visión estratégica marca la diferencia. En <strong>HalconByte</strong>,
+        ágil y con visión estratégica marca la diferencia. En <strong>HawkByte</strong>,
         ofrecemos soluciones integrales tecnológicas pensadas para las necesidades reales de tu empresa.
       </p>
 

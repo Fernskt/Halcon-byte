@@ -1,34 +1,45 @@
 @import '../../styles/variables.css';
 
 .about {
-  padding: 4rem 1.5rem;
-  background: #fff;
-  text-align: center;
-  padding: 5rem 15rem;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.2rem;
 }
 
 .title {
-  text-align: center;
-  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  max-width: 800px;
+  font-size: clamp(2.75rem, 4.5vw, 4.25rem);
   margin-bottom: 1.75rem;
   color: var(--color-primary);
+  margin-left: 5rem;
 }
 
 .subtitle {
+  max-width: 800px;
   margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--color-primary);
+  margin-left: 5rem;
 }
 
 .paragraph {
+  max-width: 800px;
   margin: 0.75rem 0;
   line-height: 1.6;
+  margin-left: 5rem;
 }
 
 .cta {
+  max-width: 800px;
   margin-top: 1.25rem;
   font-weight: 600;
   color: var(--color-accent);
+  margin-left: 5rem;
 }
 
 .cta a {
@@ -39,13 +50,21 @@
 @media (max-width: 768px) {
   .about {
     padding: 2rem 1.5rem;
-  }
-
-  .title {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    text-align: center;
+    align-items: center;
   }
 
   .subtitle {
     font-size: 1.125rem;
+    margin-left: 0;
+  }
+  .title {
+    margin-left: 0;
+  }
+  .paragraph {
+    margin-left: 0;
+  }
+  .cta {
+    margin-left: 0;
   }
 }
